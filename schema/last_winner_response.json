@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LastWinnerResponse",
+  "type": "object",
+  "required": [
+    "address",
+    "pot_amount"
+  ],
+  "properties": {
+    "address": {
+      "$ref": "#/definitions/HumanAddr"
+    },
+    "pot_amount": {
+      "$ref": "#/definitions/Uint128"
+    }
+  },
+  "definitions": {
+    "HumanAddr": {
+      "type": "string"
+    },
+    "Uint128": {
+      "type": "string"
+    }
+  }
+}

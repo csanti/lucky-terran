@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InitMsg",
+  "type": "object",
+  "required": [
+    "minimum_bet_amount",
+    "terrand_address"
+  ],
+  "properties": {
+    "minimum_bet_amount": {
+      "$ref": "#/definitions/Uint128"
+    },
+    "terrand_address": {
+      "$ref": "#/definitions/HumanAddr"
+    }
+  },
+  "definitions": {
+    "HumanAddr": {
+      "type": "string"
+    },
+    "Uint128": {
+      "type": "string"
+    }
+  }
+}

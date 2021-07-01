@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HandleMsg",
+  "anyOf": [
+    {
+      "type": "object",
+      "required": [
+        "guess_number"
+      ],
+      "properties": {
+        "guess_number": {
+          "type": "object",
+          "required": [
+            "number"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "format": "uint8",
+              "minimum": 0.0
+            }
+          }
+        }
+      }
+    }
+  ]
+}
